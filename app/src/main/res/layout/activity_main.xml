@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginBottom="50dp"
+            tools:context=".MainActivity">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:contentDescription="@string/logo"
+                android:src="@drawable/dd_logo" />
+
+            <TextView
+                android:id="@+id/foodNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                android:gravity="center_horizontal"
+                android:text="@string/hamburger"
+                android:textColor="@color/text_color"
+                android:textSize="30sp" />
+
+            <EditText
+                android:id="@+id/newFoodTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginTop="100dp"
+                android:hint="@string/add_new_food"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/addFoodBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="50dp"
+                android:layout_marginVertical="10dp"
+                android:background="@color/purple_500"
+                android:gravity="center_horizontal"
+                android:text="@string/add_food"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/decideBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/purple_500"
+        android:gravity="center_horizontal"
+        android:text="@string/decide"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</RelativeLayout>
